@@ -1,12 +1,15 @@
 /*
 // --------- Chapter 1 (ALERT) ----------
 //  Task 1 (Write a script to greet your website visitor using JS alert box.)
+
 alert("Hello JavaScript");
 
 // Task 2 (Write a script to display following message on your web page:)
+
 alert("Error! Please enter a valid password.");
 
 // Task 3 (Write a script to display following message on your web page: (Hint : Use line break))
+
 alert("Welcome to JS Land...\nHappy Coding!");
 
 // Task 4 (Write a script to display following messages in sequence:)
@@ -766,5 +769,535 @@ if (operator === "+") {
   );
 } else {
   alert("you typed wrong operator");
+}
+*/
+
+// ------------------------- Chapter 12 - 13 ------------------------------
+
+// Task 1
+
+/*
+var character = prompt("Enter character");
+
+var code = character.charCodeAt();
+
+if (code >= 65 && code <= 90) {
+  alert("This is uppercase letter");
+} else if (code >= 97 && code <= 122) {
+  alert("this is lower case letter");
+} else if (isNaN(character) === false) {
+  alert("this is a number");
+} else {
+  alert(character + " is not a number and letter");
+}
+*/
+
+// Task 2
+
+/*
+var firstNumber = parseInt(prompt("Enter first number "));
+var secondNumber = parseInt(prompt("Enter second number"));
+
+if (firstNumber > secondNumber && secondNumber < firstNumber) {
+  alert(firstNumber + " is greater than " + secondNumber);
+} else if (secondNumber > firstNumber && firstNumber < secondNumber) {
+  alert(firstNumber + " is less than " + secondNumber);
+} else if (firstNumber === secondNumber) {
+  alert(firstNumber + " is equal to " + secondNumber);
+} else {
+  alert("you typed wrong input");
+}
+*/
+
+// Task 3
+
+/*
+var number = parseInt(prompt("Enter number"));
+
+if (number >= 1) {
+  alert("Number is Positive");
+} else if (number < 0) {
+  alert("Number is Negative");
+} else if (number === 0) {
+  alert("Number is Zero");
+} else {
+  alert("You typed wrong input");
+}
+*/
+
+// Task 4
+
+/*
+var string = prompt("Enter a character");
+var matchFound = false;
+
+for (var i = 0; i < string.length; i++) {
+  if (
+    string[i] === "A" ||
+    string[i] === "E" ||
+    string[i] === "I" ||
+    string[i] === "O" ||
+    string[i] === "U" ||
+    string[i] === "a" ||
+    string[i] === "e" ||
+    string[i] === "i" ||
+    string[i] === "o" ||
+    string[i] === "u"
+  ) {
+    alert("True");
+    matchFound = true;
+    break;
+  }
+}
+
+if (!matchFound) {
+  alert("False");
+}
+*/
+
+// Task 5
+
+/*
+var correctPassword = "abcd";
+var userPassword = prompt("Enter password");
+
+if (!userPassword) {
+  alert("Please enter your password");
+} else if (correctPassword === userPassword) {
+  alert("Correct! The password you entered matches the original password");
+} else {
+  alert("Incorrect password");
+}
+*/
+
+// Task 6
+
+/*
+var greeting;
+
+var hour = 13;
+if (hour < 18) {
+  greeting = "Good day";
+  alert(greeting);
+} else {
+  greeting = "Good evening";
+  alert(greeting);
+}
+*/
+
+// Task 7
+
+/*
+var time = +prompt("Enter time");
+
+if (time >= 0000 && time < 1200) {
+  alert("Good Morning");
+} else if ((time >= 1200) & (time < 1700)) {
+  alert("Good afternoon");
+} else if (time >= 1700 && time < 2100) {
+  alert("Good evening");
+} else if (time >= 2100 && time <= 2359) {
+  alert("Good night");
+}
+*/
+
+// --------------- Chapter 14 - 16 ------------------------
+
+// Task 1
+
+var studentsName = ["taha", "amir", "bilal", "nasir", "umair"];
+
+// Task 2
+
+var newStudents = new Array("ahad", "bilal", "usman", "owais");
+
+// Task 3
+
+var stringsArray = ["true", "abc", "def"];
+
+// Task 4
+
+var numbersArray = [22, 12, 1, 90, 67];
+
+// Task 5
+
+var booleanArray = [true, false, true, true, false];
+
+// Task 6
+
+var mixedArray = [1, "abc", true, 9.2, null];
+
+// Task 7
+
+/*
+var educationQualifications = [
+  "SSC",
+  "HSC",
+  "BCS",
+  "BS",
+  "BCOM",
+  "MS",
+  "M.Phil",
+  "PhD",
+];
+
+document.write("<p>Qualifications</p><br>");
+
+for (var i = 0; i < educationQualifications.length; i++) {
+  document.write(i + 1 + ") " + educationQualifications[i]);
+  document.write("<br>");
+}
+*/
+
+// Task 8
+
+/*
+var studentNames = ["Michael", "John", "Tony"];
+var scoreOfStudents = [320, 230, 480];
+
+for (var i = 0; i < studentNames.length; i++) {
+  document.write(
+    "Score of " +
+      studentNames[i] +
+      " is " +
+      scoreOfStudents[i] +
+      "." +
+      "Percentage: " +
+      (scoreOfStudents[i] / 500) * 100 +
+      "%"
+  );
+  document.write("<br>");
+}
+*/
+
+// Task 9
+
+/*
+var colorNames = ["red", "green", "blue"];
+
+document.write("Element: " + colorNames);
+document.write("<br><br>");
+
+// adding color to the beginning
+var addColorBeginning = prompt(
+  "What color you want to add to the beginning of array"
+);
+colorNames.unshift(addColorBeginning);
+document.write(
+  "Added color to the beginning of array: " + addColorBeginning + "<br>"
+);
+document.write("Updated Color: " + colorNames);
+document.write("<br><br>");
+
+// adding color to the end
+var addColorToEnd = prompt("What color you want to add to the end of array");
+colorNames.push(addColorToEnd);
+
+document.write("Added color to the end of array: " + addColorToEnd + "<br>");
+document.write("Updated Color: " + colorNames);
+document.write("<br><br>");
+
+// adding two or more color to the beginning
+colorNames.unshift("white", "black");
+document.write("Added two or more color to the beginning of array: " + "<br>");
+document.write("Updated Color: " + colorNames);
+document.write("<br><br>");
+
+// deleting the first color in the array
+colorNames.shift("white");
+document.write("Deleting the first color: " + "white" + "<br>");
+document.write("Updated Color: " + colorNames);
+document.write("<br><br>");
+
+// deleting the last color in the array
+var deletingLast = colorNames.pop();
+document.write("Deleting the last color: " + deletingLast + "<br>");
+document.write("Updated Color: " + colorNames);
+document.write("<br><br>");
+
+// Asking user at which index he wants to add a color name then add color to desired index
+var indexNo = parseInt(
+  prompt("Which index you want to add color please type index number")
+);
+var colorName = prompt("Type color name");
+colorNames.splice(indexNo, 0, colorName);
+document.write("Asking user at whcih index he want to add color: " + "<br>");
+document.write("Updated Color: " + colorNames);
+document.write("<br><br>");
+
+// Asking user at which index he wants to delete colors and how many color wants to delete then remove the same number
+
+var startIndex = parseInt(prompt("Which index you want to delete colors"));
+var deletingNumbers = parseInt(prompt("How many colors you want to delete"));
+colorNames.splice(startIndex, deletingNumbers);
+document.write(
+  "Asking user at whcih index he want to delete and how many colors to delete: " +
+    "<br>"
+);
+document.write("Updated Color: " + colorNames);
+document.write("<br><br>");
+
+*/
+
+// Task 10
+
+/*
+var studentScores = [320, 230, 480, 120];
+
+document.write("Scores of Students: " + studentScores);
+document.write("<br>");
+document.write("Ordered Scores of Students:" + studentScores.sort());
+*/
+
+// Task 11
+
+/*
+var cityNames = ["Karachi", "Lahore", "Islmabad", "Quetta", "Peshawar"];
+var selectedCities = cityNames.slice(2, 4);
+
+document.write("Cities list: " + cityNames);
+document.write("<br>");
+document.write("Selected cities list: " + selectedCities);
+*/
+
+// Task 12
+
+/*
+var arr = ["This", "is", "my", "cat"];
+
+var string = arr.join(" ");
+
+document.write("Array: <br>");
+document.write(arr);
+document.write("<br><br>");
+
+document.write("String:<br>");
+document.write(string);
+*/
+
+// Task 13
+
+/*
+var newArray = ["keyboard", "mouse", "printer", "monitor"];
+
+document.write("Devices: <br>");
+document.write(newArray);
+document.write("<br><br><br>");
+
+for (var i = 0; i < newArray.length; i++) {
+  document.write("<br>" + "Out: <br>");
+  document.write(newArray[i]);
+}
+*/
+
+// Task 14
+
+/*
+var newArray = ["keyboard", "mouse", "printer", "monitor"];
+
+document.write("Devices: <br>");
+document.write(newArray);
+document.write("<br><br><br>");
+
+for (var i = newArray.length - 1; i >= 0; i--) {
+  document.write("<br>" + "Out: <br>");
+  document.write(newArray[i]);
+}
+*/
+
+// Task 15
+
+/*
+var phoneManufactures = [
+  "Apple",
+  "Samsung",
+  "Motorola",
+  "Nokia",
+  "Sony",
+  "Haier",
+];
+
+document.write("<select>");
+for (var i = 0; i < phoneManufactures.length; i++) {
+  document.write("<option>" + phoneManufactures[i] + "</option>");
+}
+
+document.write("</select>");
+*/
+
+// ---------------------- Chapter 17 - 20 -----------------------------------
+
+// Task 1
+
+var multiDimArray = [[], [], []];
+
+// Task 2
+
+/*
+var multiDimArray = [
+  [0, 1, 2, 3],
+  [1, 0, 1, 2],
+  [2, 1, 0, 1],
+];
+
+for (var i = 0; i < multiDimArray.length; i++) {
+  for (var j = 0; j < multiDimArray.length + 1; j++) {
+    document.write(multiDimArray[i][j] + " ");
+  }
+  document.write("<br>");
+}
+*/
+
+// Task 3
+
+/*
+for (var i = 1; i <= 10; i++) {
+  document.write(i);
+  document.write("<br>");
+}
+*/
+
+// Task 4
+
+/*
+var tableNumber = parseInt(
+  prompt("Enter a number to show its multiplication table")
+);
+var tableLength = parseInt(prompt("Enter length of multiplication table"));
+
+document.write("Multiplication table of " + tableNumber);
+document.write("<br>");
+document.write("Length " + tableLength);
+document.write("<br><br>");
+
+for (var i = 1; i <= tableLength; i++) {
+  document.write(tableNumber + " X " + i + " = " + tableNumber * i);
+  document.write("<br>");
+}
+*/
+
+// Task 5
+
+/*
+var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+for (var i = 0; i < fruits.length; i++) {
+  document.write(fruits[i] + "<br>");
+}
+
+document.write("<br><br>");
+
+for (var j = 0; j < fruits.length; j++) {
+  document.write("Element at index " + j + " is " + fruits[j] + "<br>");
+}
+*/
+
+// Task 6
+
+/*
+document.write("<h4>Counting:</h4>");
+
+for (var i = 1; i <= 15; i++) {
+  document.write(i + "," + " ");
+}
+
+document.write("<h4>Reverse Counting:</h4>");
+for (var i = 10; i > 0; i--) {
+  document.write(i + "," + " ");
+}
+
+document.write("<h4>Even:</h4>");
+for (var i = 0; i <= 20; i++) {
+  if (i % 2 == 0) {
+    document.write(i + "," + " ");
+  }
+}
+
+document.write("<h4>Odd:</h4>");
+for (var i = 0; i <= 20; i++) {
+  if (i % 2 !== 0) {
+    document.write(i + "," + " ");
+  }
+}
+
+document.write("<h4>Series:</h4>");
+for (var i = 2; i <= 20; i++) {
+  if (i % 2 == 0) {
+    document.write(i + "k," + " ");
+  }
+}
+*/
+
+// Task 7
+
+/*
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+var search = prompt(
+  "Welcome to ABC Bakery. What do you want to order sir/ma'am"
+);
+
+var matchFound = false;
+
+for (var i = 0; i < A.length; i++) {
+  if (search === A[i]) {
+    document.write(
+      A[i] + " is <b>available</b> at index " + i + " in our bakery"
+    );
+    matchFound = true;
+    break;
+  }
+}
+
+if (!matchFound) {
+  document.write(
+    "We are sorry. " + search + " is <b>not available</b> in our bakery"
+  );
+}
+*/
+
+// Task 8
+
+/*
+var A = [24, 53, 78, 91, 12];
+var largest = A[0];
+
+document.write("Array items: " + A);
+document.write("<br>");
+
+for (var i = 0; i < A.length; i++) {
+  if (A[i] > largest) {
+    largest = A[i];
+  }
+}
+
+document.write("The largest number is " + largest);
+*/
+
+// Task 9
+
+/*
+var A = [24, 53, 78, 91, 12];
+var smallest = A[0];
+
+document.write("Array items: " + A);
+document.write("<br>");
+
+for (var i = 0; i < A.length; i++) {
+  if (A[i] < smallest) {
+    smallest = A[i];
+  }
+}
+
+document.write("The smallest number is " + smallest);
+*/
+
+// Task 10
+
+/*
+for (var i = 5; i <= 100; i++) {
+  if (i % 5 === 0) {
+    document.write(i + ",");
+  }
 }
 */
