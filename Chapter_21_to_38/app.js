@@ -436,3 +436,327 @@ var laterDate = new Date("Dec 31 2020");
 
 document.write("Later date: " + laterDate);
 */
+
+// Task # 9
+
+/*
+var currentDate = new Date();
+var currentMills = currentDate.getTime();
+
+var lastRamadam = new Date("Apr 24, 2020");
+var lastRamadanMills = lastRamadam.getTime();
+
+var diffMills = currentMills - lastRamadanMills;
+
+var accRamadanDate = diffMills / (1000 * 60 * 60 * 24);
+accRamadanDate = Math.floor(accRamadanDate);
+
+document.write(accRamadanDate + " days have passed since 1st Ramazan, 2020");
+*/
+
+// Task # 10
+
+/*
+var currentDate = new Date();
+var currentMills = currentDate.getTime();
+
+var referenceDate = new Date("Dec 05,2015 22:50:16");
+var referenceDateMills = referenceDate.getTime();
+
+var diffOfMills = currentMills - referenceDateMills;
+var diffSeconds = diffOfMills / 1000;
+diffSeconds = Math.floor(diffSeconds);
+
+document.write("on reference date " + referenceDate);
+document.write("<br>");
+document.write(diffSeconds + " seconds had passed since beginning of 2015");
+*/
+
+// Task # 11
+
+/*
+var currentDate = new Date();
+var currentHour = currentDate.getHours();
+
+var hourAgo = currentHour - 1;
+
+document.write("current date: " + currentDate);
+document.write("<br>");
+
+currentDate.setHours(hourAgo);
+document.write("1 hour ago, it was " + currentDate);
+*/
+
+// Task # 12
+
+/*
+var currentDate = new Date();
+var currentYear = currentDate.getFullYear();
+
+var hundredYearsBack = currentYear - 100;
+
+document.write("current date: " + currentDate);
+document.write("<br>");
+
+currentDate.setFullYear(hundredYearsBack);
+document.write("100 years back, it was " + currentDate);
+*/
+
+// Task # 13
+
+/*
+var age = parseInt(prompt("Enter your age:"));
+
+var currentDate = new Date();
+var currentYear = currentDate.getFullYear();
+
+var birthYear = currentYear - age;
+
+document.write("Your age is :" + age);
+document.write("<br>");
+document.write("Your birth year is " + birthYear);
+*/
+
+// Task # 14
+
+// Pending
+/* 
+var customerName = "ABC";
+var currentMonth = "Feb";
+var numberOfUnits = 410;
+var chargePerUnit = 16;
+
+var netAmount = numberOfUnits * chargePerUnit;
+var latePayments = ;
+// var grossAmount = netAmount + 
+
+document.write("Customer Name: " + customerName + "<br>");
+document.write("Month: " + currentMonth + "<br>");
+document.write("Number of units: " + numberOfUnits + "<br>");
+document.write("Charges per unit: " + chargePerUnit + "<br><br><br>");
+
+document.write("Net Amount Payable (within Due Date): " + netAmount);
+document.write("<br>");
+document.write("Last payment surcharge: ");
+document.write("<br>");
+document.write("Gross amount payable (after due date): ");
+*/
+
+// ----------------------- Chapter 35 - 38 --------------------------------//
+
+// Task # 1
+
+/*
+function currentDateandTime() {
+  var currentDate = new Date();
+  document.write(currentDate);
+}
+
+currentDateandTime();
+*/
+
+// Task # 2
+
+/*
+function greetUser(firstName, lastName) {
+  var fullName = firstName + " " + lastName;
+  alert("Hello, " + fullName);
+}
+
+greetUser("arsalan", "manzoor");
+*/
+
+// Task # 3
+
+/*
+function addTwoNumbers(num1, num2) {
+  return alert("The sum of two number is " + (num1 + num2));
+}
+
+addTwoNumbers(12, 2);
+*/
+
+// Task # 4
+
+/*
+function calculator(num1, num2, operator) {
+  if (operator === "+") {
+    return document.write(
+      "The sum of " + num1 + " and " + num2 + " is: " + (num1 + num2)
+    );
+  } else if (operator === "-") {
+    return document.write(
+      "The sub of " + num1 + " and " + num2 + " is: " + (num1 - num2)
+    );
+  } else if (operator === "*") {
+    return document.write(
+      "The multiplication of " + num1 + " and " + num2 + " is: " + num1 * num2
+    );
+  } else if (operator === "/") {
+    return document.write(
+      "The div of " + num1 + " and " + num2 + " is: " + num1 / num2
+    );
+  } else {
+    return document.write("Invalid operator try again!");
+  }
+}
+
+calculator(2, 3, "*");
+*/
+
+// Task # 5
+
+/*
+function square(num) {
+  return alert("Square of " + num + " is : " + num * num);
+}
+
+square(3);
+*/
+
+// Task # 6
+
+/*
+function factorial(num) {
+  var factorial = 1;
+  for (var i = 1; i <= num; i++) {
+    factorial = factorial * i;
+  }
+
+  // 1 * 1 = 1
+  // 1 * 2 = 2
+  // 2 * 3 = 6
+  // 6 * 4 = 24
+  console.log(factorial);
+}
+
+factorial(4);
+*/
+
+// Task # 7
+
+/*
+function counting(startNo, endNo) {
+  var countNumbers = 0;
+
+  for (var i = startNo; i <= endNo; i++) {
+    countNumbers++;
+  }
+
+  return countNumbers;
+}
+
+var returnVal = counting(2, 7);
+alert(returnVal);
+*/
+
+// Task # 8 (pending)
+
+// Task # 9
+
+/*
+function calculateArea(width, height) {
+  var area = width * height;
+  return alert("Area = " + area);
+}
+
+var height = 20;
+calculateArea(50, height);
+*/
+
+// Task # 10
+
+/*
+function checkPalindrom(word) {
+  var reverseWord = "";
+  for (var i = word.length - 1; i >= 0; i--) {
+    reverseWord += word[i];
+  }
+
+  if (word === reverseWord) {
+    return alert("String is Palindrome");
+  } else {
+    return alert("String is not palindrome");
+  }
+}
+
+checkPalindrom("madam");
+*/
+
+// Task # 11
+
+/*
+function convertFirstLetter(string) {
+  var firstChar = string[0].toUpperCase();
+  var otherChar = string.slice(1);
+  var fullString = firstChar + otherChar;
+  return fullString;
+}
+
+s = "the quick brown fox";
+
+document.write("Example STRING: " + s + "<br>");
+
+returnValue = convertFirstLetter(s);
+document.write("Expected Output: " + returnValue);
+*/
+
+// Task # 12
+
+/*
+function longestWord(string, word) {
+  var arrString = string.split(" ");
+  largeString = arrString[0];
+
+  for (var i = 0; i < arrString.length; i++) {
+    if (arrString[i].length > largeString.length) {
+      largeString = arrString[i];
+    }
+  }
+
+  return largeString;
+}
+
+var a = longestWord("Web Development Tutorialaaaaaaaaaaa");
+console.log(a);
+*/
+
+// Task # 13
+
+/*
+function countNumberOfOccurence(string, letter) {
+  var count = 0;
+
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] === letter) {
+      count++;
+    }
+  }
+  return count;
+}
+var string = "helllo";
+var letter = "l";
+
+var returnCount = countNumberOfOccurence(string, letter);
+document.write("The number of occurence of " + letter + " is " + returnCount);
+*/
+
+// Task # 14
+
+/*
+function calcCircumFerence(radius) {
+  var circumference = 2 * 3.14 * radius;
+  return circumference;
+}
+
+function calcArea(radius) {
+  var area = 3.14 * radius ** 2;
+  return area;
+}
+
+var circumference = calcCircumFerence(20);
+document.write("The circumference is " + circumference + "<br>");
+
+var area = calcArea(19);
+document.write("The area is " + area);
+*/
