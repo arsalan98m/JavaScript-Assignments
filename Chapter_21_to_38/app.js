@@ -637,17 +637,13 @@ factorial(4);
 
 /*
 function counting(startNo, endNo) {
-  var countNumbers = 0;
-
   for (var i = startNo; i <= endNo; i++) {
-    countNumbers++;
+    document.write(i+" ");
   }
-
-  return countNumbers;
 }
 
-var returnVal = counting(2, 7);
-alert(returnVal);
+counting(2, 7);
+
 */
 
 // Task # 8 (pending)
