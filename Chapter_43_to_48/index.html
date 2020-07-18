@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 43 to 48 (Events)</title>
+
+    <style>
+        h2 {
+            color: rgb(65, 113, 143);
+        }
+
+        figure {
+            display: inline-block;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        figcaption {
+            padding: 10px;
+        }
+
+        img {
+            border: 2px solid rgb(65, 113, 143);
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Task # 1 and 2 -->
+    <h2>Task # 1 and 2</h2>
+    <h2>Mobile Phone lookup</h2>
+    <figure onClick="purchase()">
+        <img src="phone1.jpg" alt="">
+        <figcaption>Vivo V19
+        </figcaption>
+    </figure>
+
+    <figure onClick="purchase()">
+        <img src="phone2.jpg" alt="">
+        <figcaption>Infinix Hot 9 Play 3GB</figcaption>
+    </figure>
+
+    <figure onClick="purchase()">
+        <img src="phone3.jpg" alt="">
+        <figcaption>Infinix Note 7 Lite</figcaption>
+    </figure>
+
+    <figure onClick="purchase()">
+        <img src="phone4.jpg" alt="">
+        <figcaption>Samsung Galaxy Z Flip</figcaption>
+    </figure>
+
+    <!-- Task # 3 -->
+    <h2>Task # 3</h2>
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+
+        <tr id="data0">
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><button onclick="deleteData('data0');">Delete</button></td>
+        </tr>
+
+        <tr id="data1">
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="deleteData('data1');">Delete</button></td>
+        </tr>
+
+        <tr id="data2">
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="deleteData('data2');">Delete</button></td>
+        </tr>
+
+        <tr id="data3">
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="deleteData('data3');">Delete</button></td>
+        </tr>
+    </table>
+
+
+    <!-- Task # 4 -->
+    <h2>Task # 4</h2>
+    <img src="car1.jpeg" onmouseover="src='car2.jpg'" onmouseout="src='car1.jpeg'" width="400px" alt="">
+
+    <!-- Task # 5 -->
+
+    <h2>Task # 5 (Counter)</h2>
+    <h2 id="showCounter"></h2>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+    <script src="app.js"></script>
+</body>
+
+</html>
