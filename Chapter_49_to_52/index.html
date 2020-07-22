@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chapter 49 to 52</title>
+</head>
+
+<body>
+    <!-- Task 1 (Sign up form) -->
+    <h2>Task # 1 (Signup form)</h2>
+
+    <div class="container">
+        <form onsubmit="signup('fname','lname','email','password')">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your firstname">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your lastname">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Enter your email address">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="password" name="password" placeholder="Enter your password">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- Task # 2 Read More data -->
+    <h2>Task # 2 (Read more data)</h2>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum ullam laudantium blanditiis dolore
+        delectus
+        libero incidunt unde quasi tempore...<a href="javascript:void(0)" onclick="readMore()">Read more</a></p>
+
+
+    <!-- Task # 3 (Students data) -->
+    <h2>Task # 3 (Student data)</h2>
+    <div class="row">
+        <div class="col-25">
+            <label for="name">Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-25">
+            <label for="name">Class</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="class" name="class" placeholder="Enter your class">
+        </div>
+    </div>
+
+    <div class="row">
+        <input type="submit" value="Insert data" onclick="insertData()">
+    </div>
+
+    <h2>Task # 3</h2>
+    <table id="table">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+
+
+
+
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
