@@ -25,7 +25,7 @@ function signup(fname, lname, email, pass) {
 }
 
 
-// Task # 2
+// Task # 2 (Readmore)
 
 function readMore() {
     var text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum ullam laudantium blanditiis dolore delectus libero incidunt unde quasi tempore Quod eum ullam laudantium blanditiis dolore delectus libero incidunt unde quasi tempore Lorem ipsum dolor sit amet consectetur adipisicing elit.";
@@ -33,7 +33,7 @@ function readMore() {
     para.innerHTML = text;
 }
 
-// Task # 3
+// Task # 3 (students data)
 
 var table = document.getElementById("table");
 var names = [];
