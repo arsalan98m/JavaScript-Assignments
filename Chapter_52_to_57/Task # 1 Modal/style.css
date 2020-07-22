@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+   text-align: center;
+}
+img{
+    display: inline-block;
+    margin: 10px auto;
+    cursor: pointer;
+}
